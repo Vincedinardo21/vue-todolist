@@ -1,3 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(43, 49, 47);
+}
+
+#app {
+    width: 600px;
+    margin: 0 auto;
+}
+
+.new-todo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .text-true.active {
     text-decoration: line-through;
     color: green;
@@ -5,4 +27,27 @@
 
 .text-true {
     color: black;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(214, 227, 121);
 }
+
+ul {
+    list-style-type: none;
+}
+
+button {
+    margin-left: 10px;
+}
+
+i {
+    color: black;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+

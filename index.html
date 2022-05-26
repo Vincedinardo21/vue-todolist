@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <div class="new-todo">
-            <input type="text" v-model="newTodo.text" placeholder="Nuovo Todo">
+            <input type="text" v-model="newTodo.text" placeholder="Nuovo brano">
             <!-- <span>{{newTodo}}</span> -->
             <button @click="addItem">Aggiungi</button>
         </div>
@@ -20,7 +20,7 @@
             <ul v-if="todos.length > 0">
                 <li v-for="(item, i) in todos" class="text-true" :class="item.done === true ? 'active' : '' " :kei="i">{{item.text}}<i class="fas fa-times" @click="deleteItem(i)"></i></li>
             </ul>
-            <h2 v-else>Non ci sono todo</h2>
+            <h2 v-else>Non ci sono brani in lista</h2>
         </div>
     </div>
 
