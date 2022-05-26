@@ -20,14 +20,16 @@ var myTodoList = new Vue({
             },
             {
                 text : "Blink 182 - All the small things",
-                done : true
+                done : false
             }
         ]
     },
     methods : {
         addItem(){
-            this.todos.push(this.newTodo.text);
-            // this.newTodo.text = "";
+            if(this.newTodo.text !== ""){
+                this.todos.push(this.newTodo);
+                this.newTodo = ""; 
+            }
         }
     }
 });
