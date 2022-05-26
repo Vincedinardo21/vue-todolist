@@ -3,7 +3,7 @@ var myTodoList = new Vue({
     data : {
         newTodo : {
             text : "",
-            done : true
+            done : false
         },
         todos : [
             {
@@ -30,6 +30,9 @@ var myTodoList = new Vue({
                 this.todos.push(this.newTodo);
                 this.newTodo = ""; 
             }
+        },
+        deleteItem(index){
+            this.todos.splice(index, 1);
         }
     }
 });

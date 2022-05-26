@@ -1,8 +1,8 @@
 .text-true.active {
     text-decoration: line-through;
-    color: red;
+    color: green;
 }
 
 .text-true {
-    color: aqua;
+    color: black;
 }
