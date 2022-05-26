@@ -15,5 +15,10 @@ var myTodoList = new Vue({
                 done : true
             }
         ]
-    }   
+    },
+    methods : {
+        addItem(){
+            
+        }
+    }
 });
