@@ -33,6 +33,9 @@ var myTodoList = new Vue({
         },
         deleteItem(index){
             this.todos.splice(index, 1);
+        },
+        clickOnItem(){
+            this.todos.done = true;
         }
     }
 });
